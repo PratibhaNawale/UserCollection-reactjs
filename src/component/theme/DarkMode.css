@@ -1,0 +1,45 @@
+/* Base styles */
+body {
+    --primary-color: var(--primary-color);
+    --secondary-color: var(--secondary-color);
+    --font-color: var(--font-color);
+    --bg-color: var(--bg-color);
+    --heading-color: var(--heading-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+/* Light theme */
+body[data-theme='light'] {
+    --primary-color: #302ae6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #f0f1ff;
+    --heading-color: #292922;
+}
+
+/* Dark theme */
+body[data-theme='dark'] {
+    --primary-color: #9a97f3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+
+/* Dark mode toggle styles */
+.dark_mode {
+    position: absolute;
+    right: 21px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark_mode_input {
+    display: none;
+}
+
+.dark_mode_label {
+    cursor: pointer;
+}

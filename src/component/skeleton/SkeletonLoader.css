@@ -1,0 +1,31 @@
+.skeleton {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 5px 0;
+    width: 100%;
+    height: 20px;
+}
+
+.skeleton-checkbox {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.skeleton-text {
+    height: 16px;
+}
+
+.skeleton-actions {
+    width: 50px;
+    height: 20px;
+}
+
+.skeleton-loader-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skeleton-loader-row .skeleton {
+    margin-right: 8px;
+}

@@ -1,0 +1,60 @@
+.order-sidebar {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 37%;
+    background-color: var(--bg-color);
+    z-index: 111111;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    right: 28px;
+    margin-top: 9px;
+}
+
+.set-btnfooter {
+    position: absolute;
+    bottom: 9px;
+}
+
+.custom-toast-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999; /* Ensure it is on top of other elements */
+}
+
+
+.set-input {
+    height: 35px;
+    width: 100%;
+    padding: 13px;
+    font-size: 14px;
+    border-radius: 9px;
+    border: 1px solid;
+    background-color: var(--bg-color) !important;
+    color: var(--font-color) !important;
+    outline: none;
+}
+
+.set-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.input-error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.cursor {
+    cursor: pointer !important;
+}

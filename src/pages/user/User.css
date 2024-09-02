@@ -1,0 +1,230 @@
+.main-padding {
+    padding-top: 25px;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.popup-box {
+    position: fixed;
+    background: #a4a4a461;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.d-flex {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.responsive-scroll-bar {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.table-scroll-sr {
+    height: calc(100vh - 218px) !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.card {
+    width: 138px;
+    height: 77px;
+    background-color: #f0f1ff;
+    text-align: center;
+}
+
+.table-scroll-sr table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-scroll-sr thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.table-scroll-sr tbody {
+    display: block;
+    max-height: calc(100vh - 134px);
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-scroll-sr tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.search {
+    height: 35px;
+    width: 197px;
+    padding: 10px;
+    border-radius: 26px;
+    border: 1px solid;
+    outline: none;
+    background-color: var(--bg-color) !important;
+    color: var(--font-color) !important;
+}
+
+
+.main {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+.add-btn {
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 26px;
+    background-color: #B2B6E9;
+    font-size: 14px;
+}
+
+.table-scroll-sr th,
+.table-scroll-sr td {
+    padding: 8px;
+    text-align: left;
+}
+
+
+.pagination {
+    display: flex;
+    list-style: none;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.pagination li {
+    margin: 0 5px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #B5B8ED;
+    padding: 5px 10px;
+}
+
+.pagination li.active {
+    background-color: #B2B6E9;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #B4B8ED;
+    margin-left: 10px;
+}
+
+.pagination .previous {
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.pagination .previous a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.pagination .next {
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.pagination .next a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.pagination .previous:hover,
+.pagination .next:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.pagination .previous.disabled,
+.pagination .next.disabled {
+    background-color: #ccc;
+    color: #888;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}
+
+
+.cust-yes {
+    position: relative;
+    background-color: black;
+    color: white;
+    left: 38%;
+    top: 16px;
+}
+
+.cust-no {
+    position: relative;
+    left: 41%;
+    top: 16px;
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid black;
+    background-color: transparent !important;
+}
+
+.cust-box {
+    position: relative;
+    width: 33%;
+    min-height: 140px;
+    background-color: #f0f1ff;
+    border-radius: 4px;
+    margin: 275px auto;
+    padding: 18px;
+    padding-left: 38px;
+    overflow: auto;
+    transform: translate(145px, 10px);
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+
+tbody,
+td,
+tr {
+    background: transparent !important;
+    color: var(--font-color) !important
+}
+
+thead,
+th {
+    background-color: #f0f1ff !important;
+}
+
+.no-data {
+    background: transparent !important;
+    position: relative;
+    top: 11vh;
+}
