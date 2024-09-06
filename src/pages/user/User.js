@@ -17,7 +17,7 @@ function App() {
     const [openEditUser, setOpenEditUser] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(0);
-    const [totalUsers, setTotalUsers] = useState(0); 
+    const [totalUsers, setTotalUsers] = useState(0);
     const [searchName, setSearchName] = useState('');
     const [searchEmail, setSearchEmail] = useState('');
     const [select, setSelect] = useState(null);
@@ -30,8 +30,14 @@ function App() {
     };
 
     const fetchUsers = () => {
+        const token = localStorage.getItem('token'); // Assuming you store the token in localStorage
         setLoading(true);
-        fetch(`http://localhost:5000/api/user/fetch?page=${currentPage}&limit=10&name=${searchName}&email=${searchEmail}`)
+        fetch(`http://localhost:5000/api/user/fetch?page=${currentPage}&limit=10&name=${searchName}&email=${searchEmail}`, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${token}` // Pass the token here
+            }
+        })
             .then(response => response.json())
             .then(data => {
                 setUsers(data.users || []);
@@ -56,6 +62,7 @@ function App() {
 
     const deleteCustomerRequests = () => {
         fetch(`http://localhost:5000/api/user/delete/${userToDelete}`, {
+
             method: 'DELETE',
         })
             .then(response => {

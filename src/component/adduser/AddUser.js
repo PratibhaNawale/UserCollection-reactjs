@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./AddUser.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function AddUser({ handleClose, fetchUsers, setOpenAddUser }) {
@@ -57,11 +57,11 @@ function AddUser({ handleClose, fetchUsers, setOpenAddUser }) {
                 setOpenAddUser(false)
                 toast.success("User created successfully!", {
                     style: {
-                      backgroundColor: "#008000",
-                      color: "white",
-                      height: "50px",
+                        backgroundColor: "#008000",
+                        color: "white",
+                        height: "50px",
                     },
-                  });
+                });
                 fetchUsers();
             } else {
                 toast.error('Failed to create user.');
